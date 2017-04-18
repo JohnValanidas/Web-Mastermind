@@ -7,51 +7,69 @@
   </head>
   <body>
     <header>
-
     </header>
-    <section class="game">
-      <div class="game-title">
-        <h1 class="title-text">MASTERMIND<h1>
-      </div>
-      <div>
-      </div>
-      <div class="game-controls">
-        <form method="POST" actions="/">
-          <select name="selection_1" class="input-selection">
-            <option value="red" class="selection-red">Red</option>
-            <option value="blue" class="slection-blue">Blue</option>
-            <option value="green" class="selection-green">Green</option>
-            <option value="orange" class="selection-orange">Orange</option>
-            <option value="purple" class="selection-purple">Purple</option>
-            <option value="pink" class="selection-pink">Pink</option>
-          </select>
-          <select name="selection_2" class="input-selection">
-            <option value="red" class="selection-red">Red</option>
-            <option value="blue" class="slection-blue">Blue</option>
-            <option value="green" class="selection-green">Green</option>
-            <option value="orange" class="selection-orange">Orange</option>
-            <option value="purple" class="selection-purple">Purple</option>
-            <option value="pink" class="selection-pink">Pink</option>
-          </select>
-          <select name="selection_3" class="input-selection">
-            <option value="red" class="selection-red">Red</option>
-            <option value="blue" class="slection-blue">Blue</option>
-            <option value="green" class="selection-green">Green</option>
-            <option value="orange" class="selection-orange">Orange</option>
-            <option value="purple" class="selection-purple">Purple</option>
-            <option value="pink" class="selection-pink">Pink</option>
-          </select>
-          <select name="selection_4" class="input-selection">
-            <option value="red" class="selection-red">Red</option>
-            <option value="blue" class="slection-blue">Blue</option>
-            <option value="green" class="selection-green">Green</option>
-            <option value="orange" class="selection-orange">Orange</option>
-            <option value="purple" class="selection-purple">Purple</option>
-            <option value="pink" class="selection-pink">Pink</option>
-          </select>
-          <input id="button" type="submit" value="submit" class="submit"/>
-        </form>
-      </div>
+    <section class="page-content">
+      <section class="game">
+        <div class="game-title">
+          <h1 class="title-text">MASTERMIND<h1>
+        </div>
+        <div class="game-board">
+          <ul class="turn-list">
+            <%= game_board %>
+          </ul>
+        </div>
+        <div class="game-controls">
+          <form method="POST" actions="/">
+            <select name="selection_1" class="input-selection">
+              <option value="red" class="selection-red">Red</option>
+              <option value="blue" class="slection-blue">Blue</option>
+              <option value="green" class="selection-green">Green</option>
+              <option value="orange" class="selection-orange">Orange</option>
+              <option value="purple" class="selection-purple">Purple</option>
+              <option value="pink" class="selection-pink">Pink</option>
+            </select>
+            <select name="selection_2" class="input-selection">
+              <option value="red" class="selection-red">Red</option>
+              <option value="blue" class="slection-blue">Blue</option>
+              <option value="green" class="selection-green">Green</option>
+              <option value="orange" class="selection-orange">Orange</option>
+              <option value="purple" class="selection-purple">Purple</option>
+              <option value="pink" class="selection-pink">Pink</option>
+            </select>
+            <select name="selection_3" class="input-selection">
+              <option value="red" class="selection-red">Red</option>
+              <option value="blue" class="slection-blue">Blue</option>
+              <option value="green" class="selection-green">Green</option>
+              <option value="orange" class="selection-orange">Orange</option>
+              <option value="purple" class="selection-purple">Purple</option>
+              <option value="pink" class="selection-pink">Pink</option>
+            </select>
+            <select name="selection_4" class="input-selection">
+              <option value="red" class="selection-red">Red</option>
+              <option value="blue" class="slection-blue">Blue</option>
+              <option value="green" class="selection-green">Green</option>
+              <option value="orange" class="selection-orange">Orange</option>
+              <option value="purple" class="selection-purple">Purple</option>
+              <option value="pink" class="selection-pink">Pink</option>
+            </select>
+            <input id="button" type="submit" value="submit" class="submit"/>
+          </form>
+        </div>
+      </section>
+      <aside class="instructions">
+        <h1 class="instruction-title">Game Instructions</h1>
+        <p class="instruction-content">
+          This is a code breaking game where you have to figure out
+          the secret code. The code is a combination of any four
+          colors from a six color list. If you have the right color
+          in the right spot, a black cicle will apear on the right.
+          If you have a right color but in the wrong spot a grey
+          cricle will appear. The order of these black and grey
+          circles has no relation to the order in your inputed code.
+          You will have 12 chances to guess the code before it's game
+          over. Good luck!        
+         </p>
+      </aside>
     </section>
   </body>
 </html>
