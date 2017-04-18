@@ -1,0 +1,101 @@
+/*
+=================================
+        Main Styling
+=================================
+*/
+/*
+=================================
+        Game section
+=================================
+*/
+.game {
+  position: relative;
+  width: 500px;
+  height: 700px;
+  margin: 50px auto;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.game-title {
+  width: auto;
+  height: 100px:
+  border: 1px solid grey;
+  text-align: center;
+}
+.title-text {
+  font-size: 50px;
+}
+/*
+=================================
+        Controls
+=================================
+*/
+.game-controls {
+  position: absolute;
+  height: 25px;
+  bottom: 0;
+  width: 480px;
+  padding: 10px;
+  border-top: 1px solid grey;
+}
+
+.input-selection {
+  margin: 0 15px;
+  border-radius: 10px;
+}
+.selection-red {
+}
+.selection-blue {
+}
+.selection-green {
+}
+.selection-orange {
+}
+.selection-pruple {
+}
+.selection-pink {
+}
+.submit {
+  margin-left: 15px;
+}
+
+/*
+=================================
+        Circle
+=================================
+*/
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	/* width and height can be anything, as long as they're equal */
+}
+.red {
+
+}
+.blue {
+
+}
+.green {
+
+}
+.orange {
+
+}
+.purple {
+
+}
+.pink {
+
+}
+/* Response pegs */
+.peg {
+
+}
+.grey {
+
+}
+.black {
+
+}
