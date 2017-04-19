@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'sinatra/reloader'
 
 enable :sessions
 @@colors = ["red","blue","green","orange","purple","pink"]
