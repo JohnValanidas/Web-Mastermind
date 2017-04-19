@@ -156,3 +156,24 @@
 .instruction-content {
   margin: 10px 10px;
 }
+
+.code-panal {
+  display: inline-block;
+  border: 1px solid grey;
+  border-top: 0;
+  border-left: 0;
+  width: 200px;
+  height: 90px;
+  border-bottom-right-radius: 5px;
+}
+
+.game-result {
+  margin-top: 15px;
+  font-size: 30px;
+  text-align: center;
+}
+.secret-code {
+  display: -webkit-inline-box;
+  margin: 10px 10px;
+}
+.
