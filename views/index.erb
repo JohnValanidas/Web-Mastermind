@@ -21,36 +21,36 @@
         <div class="game-controls">
           <form method="POST" actions="/">
             <select name="selection_1" class="input-selection">
-              <option value="red" class="selection-red">Red</option>
-              <option value="blue" class="slection-blue">Blue</option>
-              <option value="green" class="selection-green">Green</option>
-              <option value="orange" class="selection-orange">Orange</option>
-              <option value="purple" class="selection-purple">Purple</option>
-              <option value="pink" class="selection-pink">Pink</option>
+              <option value="red" class="selection-red" <%="selected" if input_state[0] == "red"%>>Red</option>
+              <option value="blue" class="slection-blue" <%="selected" if input_state[0] == "blue"%>>Blue</option>
+              <option value="green" class="selection-green" <%="selected" if input_state[0] == "green"%>>Green</option>
+              <option value="orange" class="selection-orange" <%="selected" if input_state[0] == "orange"%>>Orange</option>
+              <option value="purple" class="selection-purple" <%="selected" if input_state[0] == "purple"%>>Purple</option>
+              <option value="pink" class="selection-pink" <%="selected" if input_state[0] == "pink"%>>Pink</option>
             </select>
             <select name="selection_2" class="input-selection">
-              <option value="red" class="selection-red">Red</option>
-              <option value="blue" class="slection-blue">Blue</option>
-              <option value="green" class="selection-green">Green</option>
-              <option value="orange" class="selection-orange">Orange</option>
-              <option value="purple" class="selection-purple">Purple</option>
-              <option value="pink" class="selection-pink">Pink</option>
+              <option value="red" class="selection-red" <%="selected" if input_state[1] == "red"%>>Red</option>
+              <option value="blue" class="slection-blue" <%="selected" if input_state[1] == "blue"%>>Blue</option>
+              <option value="green" class="selection-green" <%="selected" if input_state[1] == "green"%>>Green</option>
+              <option value="orange" class="selection-orange" <%="selected" if input_state[1] == "orange"%>>Orange</option>
+              <option value="purple" class="selection-purple" <%="selected" if input_state[1] == "purple"%>>Purple</option>
+              <option value="pink" class="selection-pink" <%="selected" if input_state[1] == "pink"%>>Pink</option>
             </select>
             <select name="selection_3" class="input-selection">
-              <option value="red" class="selection-red">Red</option>
-              <option value="blue" class="slection-blue">Blue</option>
-              <option value="green" class="selection-green">Green</option>
-              <option value="orange" class="selection-orange">Orange</option>
-              <option value="purple" class="selection-purple">Purple</option>
-              <option value="pink" class="selection-pink">Pink</option>
+              <option value="red" class="selection-red" <%="selected" if input_state[2] == "red"%>>Red</option>
+              <option value="blue" class="slection-blue" <%="selected" if input_state[2] == "blue"%>>Blue</option>
+              <option value="green" class="selection-green" <%="selected" if input_state[2] == "green"%>>Green</option>
+              <option value="orange" class="selection-orange" <%="selected" if input_state[2] == "orange"%>>Orange</option>
+              <option value="purple" class="selection-purple" <%="selected" if input_state[2] == "purple"%>>Purple</option>
+              <option value="pink" class="selection-pink" <%="selected" if input_state[2] == "pink"%>>Pink</option>
             </select>
             <select name="selection_4" class="input-selection">
-              <option value="red" class="selection-red">Red</option>
-              <option value="blue" class="slection-blue">Blue</option>
-              <option value="green" class="selection-green">Green</option>
-              <option value="orange" class="selection-orange">Orange</option>
-              <option value="purple" class="selection-purple">Purple</option>
-              <option value="pink" class="selection-pink">Pink</option>
+              <option value="red" class="selection-red" <%="selected" if input_state[3] == "red"%>>Red</option>
+              <option value="blue" class="slection-blue" <%="selected" if input_state[3] == "blue"%>>Blue</option>
+              <option value="green" class="selection-green" <%="selected" if input_state[3] == "green"%>>Green</option>
+              <option value="orange" class="selection-orange" <%="selected" if input_state[3] == "orange"%>>Orange</option>
+              <option value="purple" class="selection-purple" <%="selected" if input_state[3] == "purple"%>>Purple</option>
+              <option value="pink" class="selection-pink" <%="selected" if input_state[3] == "pink"%>>Pink</option>
             </select>
             <input id="button" type="submit" value="submit" class="submit"/>
           </form>

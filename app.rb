@@ -5,24 +5,25 @@ class App < Sinatra::Base
 
   @game = Mastermind.new()
 
-
   use Rack::Session::Pool
-
 
   get '/' do
   	if session[:running].nil?
   		redirect to "/newgame"
   	end
-    erb :index, :locals => {:game_board => session[:html],
+    erb :index, :locals => {:input_state => session[:input_state],
+                            :game_board => session[:html],
                             :game_result => session[:game_result]}
   end
 
   post '/' do
-    redirect to "/newgame" if session[:running] == false
+    redirect to "/newgame" if session[:running] == false || session[:running].nil?
   	interpert_input params
+    input_selection params
   	session[:game].build_feedback
   	build_html
-    erb :index, :locals => {:game_board => session[:html],
+    erb :index, :locals => {:input_state => session[:input_state],
+                            :game_board => session[:html],
                             :game_result => session[:game_result]}
 
   end
@@ -33,6 +34,7 @@ class App < Sinatra::Base
   	session[:game_result] = ""
   	session[:html] = ""
   	session[:running] = true
+    session[:input_state] = ["red","red","red","red"]
   	#redirect back to main page
   	redirect to "/"
   end
@@ -47,6 +49,12 @@ class App < Sinatra::Base
   	     session[:game].turns += 1
   	end
 
+    def input_selection params
+      session[:input_state] = [params['selection_1'].to_s,
+                               params['selection_2'].to_s,
+                               params['selection_3'].to_s,
+                               params['selection_4'].to_s]
+    end
 
   	def build_html
   	  row = "<li class=\"turn-row\">" + "\n"
